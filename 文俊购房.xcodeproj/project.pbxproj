@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F73D4A1CE7005E00E954BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F73D491CE7005E00E954BB /* main.m */; };
+		04F73D4D1CE7005E00E954BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F73D4C1CE7005E00E954BB /* AppDelegate.m */; };
+		04F73D501CE7005E00E954BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F73D4F1CE7005E00E954BB /* ViewController.m */; };
+		04F73D531CE7005E00E954BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F73D511CE7005E00E954BB /* Main.storyboard */; };
+		04F73D551CE7005E00E954BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F73D541CE7005E00E954BB /* Assets.xcassets */; };
+		04F73D581CE7005E00E954BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F73D561CE7005E00E954BB /* LaunchScreen.storyboard */; };
+		04F73D631CE7005F00E954BB /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F73D621CE7005F00E954BB /* ____Tests.m */; };
+		04F73D6E1CE7005F00E954BB /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F73D6D1CE7005F00E954BB /* ____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F73D5F1CE7005F00E954BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F73D3D1CE7005E00E954BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F73D441CE7005E00E954BB;
+			remoteInfo = "文俊购房";
+		};
+		04F73D6A1CE7005F00E954BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F73D3D1CE7005E00E954BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F73D441CE7005E00E954BB;
+			remoteInfo = "文俊购房";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F73D451CE7005E00E954BB /* 文俊购房.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "文俊购房.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F73D491CE7005E00E954BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F73D4B1CE7005E00E954BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04F73D4C1CE7005E00E954BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04F73D4E1CE7005E00E954BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04F73D4F1CE7005E00E954BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04F73D521CE7005E00E954BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F73D541CE7005E00E954BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F73D571CE7005E00E954BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F73D591CE7005E00E954BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F73D5E1CE7005F00E954BB /* 文俊购房Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "文俊购房Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F73D621CE7005F00E954BB /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		04F73D641CE7005F00E954BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F73D691CE7005F00E954BB /* 文俊购房UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "文俊购房UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F73D6D1CE7005F00E954BB /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		04F73D6F1CE7005F00E954BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F73D421CE7005E00E954BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D5B1CE7005F00E954BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D661CE7005F00E954BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F73D3C1CE7005E00E954BB = {
+			isa = PBXGroup;
+			children = (
+				04F73D471CE7005E00E954BB /* 文俊购房 */,
+				04F73D611CE7005F00E954BB /* 文俊购房Tests */,
+				04F73D6C1CE7005F00E954BB /* 文俊购房UITests */,
+				04F73D461CE7005E00E954BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F73D461CE7005E00E954BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F73D451CE7005E00E954BB /* 文俊购房.app */,
+				04F73D5E1CE7005F00E954BB /* 文俊购房Tests.xctest */,
+				04F73D691CE7005F00E954BB /* 文俊购房UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F73D471CE7005E00E954BB /* 文俊购房 */ = {
+			isa = PBXGroup;
+			children = (
+				04F73D4B1CE7005E00E954BB /* AppDelegate.h */,
+				04F73D4C1CE7005E00E954BB /* AppDelegate.m */,
+				04F73D4E1CE7005E00E954BB /* ViewController.h */,
+				04F73D4F1CE7005E00E954BB /* ViewController.m */,
+				04F73D511CE7005E00E954BB /* Main.storyboard */,
+				04F73D541CE7005E00E954BB /* Assets.xcassets */,
+				04F73D561CE7005E00E954BB /* LaunchScreen.storyboard */,
+				04F73D591CE7005E00E954BB /* Info.plist */,
+				04F73D481CE7005E00E954BB /* Supporting Files */,
+			);
+			path = "文俊购房";
+			sourceTree = "<group>";
+		};
+		04F73D481CE7005E00E954BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F73D491CE7005E00E954BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F73D611CE7005F00E954BB /* 文俊购房Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04F73D621CE7005F00E954BB /* ____Tests.m */,
+				04F73D641CE7005F00E954BB /* Info.plist */,
+			);
+			path = "文俊购房Tests";
+			sourceTree = "<group>";
+		};
+		04F73D6C1CE7005F00E954BB /* 文俊购房UITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F73D6D1CE7005F00E954BB /* ____UITests.m */,
+				04F73D6F1CE7005F00E954BB /* Info.plist */,
+			);
+			path = "文俊购房UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F73D441CE7005E00E954BB /* 文俊购房 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F73D721CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房" */;
+			buildPhases = (
+				04F73D411CE7005E00E954BB /* Sources */,
+				04F73D421CE7005E00E954BB /* Frameworks */,
+				04F73D431CE7005E00E954BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "文俊购房";
+			productName = "文俊购房";
+			productReference = 04F73D451CE7005E00E954BB /* 文俊购房.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F73D5D1CE7005F00E954BB /* 文俊购房Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F73D751CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房Tests" */;
+			buildPhases = (
+				04F73D5A1CE7005F00E954BB /* Sources */,
+				04F73D5B1CE7005F00E954BB /* Frameworks */,
+				04F73D5C1CE7005F00E954BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F73D601CE7005F00E954BB /* PBXTargetDependency */,
+			);
+			name = "文俊购房Tests";
+			productName = "文俊购房Tests";
+			productReference = 04F73D5E1CE7005F00E954BB /* 文俊购房Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F73D681CE7005F00E954BB /* 文俊购房UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F73D781CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房UITests" */;
+			buildPhases = (
+				04F73D651CE7005F00E954BB /* Sources */,
+				04F73D661CE7005F00E954BB /* Frameworks */,
+				04F73D671CE7005F00E954BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F73D6B1CE7005F00E954BB /* PBXTargetDependency */,
+			);
+			name = "文俊购房UITests";
+			productName = "文俊购房UITests";
+			productReference = 04F73D691CE7005F00E954BB /* 文俊购房UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F73D3D1CE7005E00E954BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wj;
+				TargetAttributes = {
+					04F73D441CE7005E00E954BB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J63WC77KHY;
+					};
+					04F73D5D1CE7005F00E954BB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J63WC77KHY;
+						TestTargetID = 04F73D441CE7005E00E954BB;
+					};
+					04F73D681CE7005F00E954BB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J63WC77KHY;
+						TestTargetID = 04F73D441CE7005E00E954BB;
+					};
+				};
+			};
+			buildConfigurationList = 04F73D401CE7005E00E954BB /* Build configuration list for PBXProject "文俊购房" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F73D3C1CE7005E00E954BB;
+			productRefGroup = 04F73D461CE7005E00E954BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F73D441CE7005E00E954BB /* 文俊购房 */,
+				04F73D5D1CE7005F00E954BB /* 文俊购房Tests */,
+				04F73D681CE7005F00E954BB /* 文俊购房UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F73D431CE7005E00E954BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F73D581CE7005E00E954BB /* LaunchScreen.storyboard in Resources */,
+				04F73D551CE7005E00E954BB /* Assets.xcassets in Resources */,
+				04F73D531CE7005E00E954BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D5C1CE7005F00E954BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D671CE7005F00E954BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F73D411CE7005E00E954BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F73D501CE7005E00E954BB /* ViewController.m in Sources */,
+				04F73D4D1CE7005E00E954BB /* AppDelegate.m in Sources */,
+				04F73D4A1CE7005E00E954BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D5A1CE7005F00E954BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F73D631CE7005F00E954BB /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F73D651CE7005F00E954BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F73D6E1CE7005F00E954BB /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F73D601CE7005F00E954BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F73D441CE7005E00E954BB /* 文俊购房 */;
+			targetProxy = 04F73D5F1CE7005F00E954BB /* PBXContainerItemProxy */;
+		};
+		04F73D6B1CE7005F00E954BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F73D441CE7005E00E954BB /* 文俊购房 */;
+			targetProxy = 04F73D6A1CE7005F00E954BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F73D511CE7005E00E954BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F73D521CE7005E00E954BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F73D561CE7005E00E954BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F73D571CE7005E00E954BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F73D701CE7005F00E954BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04F73D711CE7005F00E954BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F73D731CE7005F00E954BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "文俊购房/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F73D741CE7005F00E954BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "文俊购房/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04F73D761CE7005F00E954BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "文俊购房Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/文俊购房.app/文俊购房";
+			};
+			name = Debug;
+		};
+		04F73D771CE7005F00E954BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "文俊购房Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/文俊购房.app/文俊购房";
+			};
+			name = Release;
+		};
+		04F73D791CE7005F00E954BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "文俊购房UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "文俊购房";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04F73D7A1CE7005F00E954BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "文俊购房UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "文俊购房";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F73D401CE7005E00E954BB /* Build configuration list for PBXProject "文俊购房" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F73D701CE7005F00E954BB /* Debug */,
+				04F73D711CE7005F00E954BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F73D721CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F73D731CE7005F00E954BB /* Debug */,
+				04F73D741CE7005F00E954BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F73D751CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F73D761CE7005F00E954BB /* Debug */,
+				04F73D771CE7005F00E954BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F73D781CE7005F00E954BB /* Build configuration list for PBXNativeTarget "文俊购房UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F73D791CE7005F00E954BB /* Debug */,
+				04F73D7A1CE7005F00E954BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F73D3D1CE7005E00E954BB /* Project object */;
+}
