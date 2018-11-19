@@ -13,8 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
+//用出现运行错误提示，可尝试将下面三行代码注释
 @interface Tip : NSObject
-
 +(void)myTip:(NSString *)str;//提示信息
-
 @end
