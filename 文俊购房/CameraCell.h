@@ -10,4 +10,8 @@
 
 @interface CameraCell : UITableViewCell
 
+@property (nonatomic,strong)UIButton *cameraBtn;
+@property (nonatomic,strong)UILabel *cameraLabel;
+@property (nonatomic,strong)UIImageView *photoImgView;
+
 @end

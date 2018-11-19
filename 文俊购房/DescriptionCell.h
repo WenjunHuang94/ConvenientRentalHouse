@@ -10,4 +10,6 @@
 
 @interface DescriptionCell : UITableViewCell
 
+@property (nonatomic,copy) UITextView *inputView;
+
 @end

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   user.plist
-   文俊购房
-
-   Created by mac on 16/5/17.
-   Copyright (c) 2016年 wj. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>tell</key>
+		<string>1</string>
+		<key>passwd</key>
+		<string>Q</string>
+	</dict>
+	<dict>
+		<key>tell</key>
+		<string>15507835782</string>
+		<key>passwd</key>
+		<string>lovedy</string>
+	</dict>
+	<dict>
+		<key>tell</key>
+		<string>15277014565</string>
+		<key>passwd</key>
+		<string>lovewj</string>
+	</dict>
+</array>
 </plist>

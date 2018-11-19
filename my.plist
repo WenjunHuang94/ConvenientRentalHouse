@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   my.plist
-   文俊购房
-
-   Created by mac on 16/5/18.
-   Copyright (c) 2016年 wj. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<array>
+		<dict>
+			<key>content</key>
+			<string>我的评价</string>
+			<key>imgname</key>
+			<string>我的评价</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>我的收藏</string>
+			<key>imgname</key>
+			<string>排行榜</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>我的租房</string>
+			<key>imgname</key>
+			<string>我的新房</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>我的求租</string>
+			<key>imgname</key>
+			<string>我的二手房</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>content</key>
+			<string>帮助与反馈</string>
+			<key>imgname</key>
+			<string>帮助与反馈</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>content</key>
+			<string>设置</string>
+			<key>imgname</key>
+			<string>设置</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>联系客服</string>
+			<key>imgname</key>
+			<string>联系客服</string>
+		</dict>
+	</array>
+</array>
 </plist>

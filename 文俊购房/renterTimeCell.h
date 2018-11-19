@@ -10,4 +10,12 @@
 
 @interface renterTimeCell : UITableViewCell
 
+@property (nonatomic,strong)UILabel *timeLabel;//签约租期
+@property (nonatomic,strong)UILabel *time;
+
+@property (nonatomic,strong)UILabel *startTimeLabel;//最晚入住
+@property (nonatomic,strong)UILabel *startTime;
+
+-(void)setObject:(AVObject *)object;
+
 @end

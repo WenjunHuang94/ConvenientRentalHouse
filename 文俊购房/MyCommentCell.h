@@ -10,4 +10,12 @@
 
 @interface MyCommentCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *timeLabel;//时间
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, assign) CGFloat cellHeight;//cell高度
+
+-(void)setObject:(AVObject *)object;
+
+
 @end

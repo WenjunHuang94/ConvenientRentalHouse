@@ -8,6 +8,17 @@
 
 #import "NavgiationViewController.h"
 
+@class ModifyNameController;
+@protocol ModifyNameControllerDelegate <NSObject>
+
+@optional
+
+-(void)ModifyName:(ModifyNameController *)vcr;//更新姓名
+
+@end
+
 @interface ModifyNameController : NavgiationViewController
+
+@property (nonatomic,weak)id<ModifyNameControllerDelegate>delegate;
 
 @end

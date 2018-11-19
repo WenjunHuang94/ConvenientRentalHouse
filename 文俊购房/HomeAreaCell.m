@@ -8,16 +8,36 @@
 
 #import "HomeAreaCell.h"
 
-@implementation HomeAreaCell
-
-- (void)awakeFromNib {
-    // Initialization code
+@implementation HomeAreaCell{
+    UILabel *area;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+        //地址图片
+        _areaImg = [[UIImageView alloc]initWithFrame:(CGRect){10,10,20,20}];
+        [_areaImg setImage:[UIImage imageNamed:@"地址"]];
+        [self addSubview:_areaImg];
+        
+        //地址标签
+        area = [[UILabel alloc]initWithFrame:(CGRect){30,10,40,20}];
+        [area setText:@"地址:"];
+        [self addSubview:area];
+        
+        //租房位置名
+        self.areaName = [[UILabel alloc]initWithFrame:(CGRect){CGRectGetMaxX(area.frame),10,self.frame.size.width - 90,20}];
+        self.areaName.font = [UIFont systemFontOfSize:13];
+        [self addSubview:self.areaName];
+        
+    }
+    return self;
+}
 
-    // Configure the view for the selected state
+-(void)setObject:(AVObject *)object{
+    //房屋详情地址
+    _areaName.text = [object objectForKey:@"areaDetail"];
+ 
 }
 
 @end

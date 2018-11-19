@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModifyView : UIView
+@interface ModifyView : UIView<UITextFieldDelegate>
+
+@property (nonatomic,strong)UITextField *oldfield;
+@property (nonatomic,strong)UITextField *passfield;
+@property (nonatomic,strong)UITextField *againfield;
 
 @end

@@ -10,4 +10,16 @@
 
 @interface MySendHomeCell : UITableViewCell
 
+@property (nonatomic,strong)UIImageView *homeImage;
+@property (nonatomic,strong)UILabel *name;
+@property (nonatomic,strong)UILabel *buildType;
+
+@property (nonatomic,strong)UILabel *cityName;
+@property (nonatomic,strong)UILabel *districtName;
+@property (nonatomic,strong)UILabel *priceRemark;
+
+@property (nonatomic,strong)UIButton *verifyBtn;//是否已验证
+
+-(void)setObject:(AVObject *)home;
+
 @end

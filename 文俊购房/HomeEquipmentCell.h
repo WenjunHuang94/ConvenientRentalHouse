@@ -10,4 +10,6 @@
 
 @interface HomeEquipmentCell : UITableViewCell
 
+-(void)setObject:(AVObject *)object;
+
 @end

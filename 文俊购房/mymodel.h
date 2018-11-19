@@ -10,4 +10,10 @@
 
 @interface mymodel : NSObject
 
+@property (nonatomic,strong)NSString *content;
+@property (nonatomic,strong)NSString *imgname;
+
+-(id)initWithDic:(NSDictionary *)dic;
++(NSArray *)arrWithDic;
+
 @end

@@ -3,6 +3,7 @@
 <plist version="1.0">
 <array>
 	<array>
+		<string>A</string>
 		<string>阿里地区</string>
 		<string>阿拉尔市</string>
 		<string>安阳市</string>
@@ -17,6 +18,7 @@
 		<string>阿坝藏族羌族自治州</string>
 	</array>
 	<array>
+		<string>B</string>
 		<string>百色市</string>
 		<string>巴中市</string>
 		<string>北海市</string>
@@ -38,6 +40,7 @@
 		<string>博尔塔拉蒙古自治州</string>
 	</array>
 	<array>
+		<string>C</string>
 		<string>巢湖市</string>
 		<string>重庆市</string>
 		<string>沧州市</string>
@@ -57,6 +60,7 @@
 		<string>赤峰市</string>
 	</array>
 	<array>
+		<string>D</string>
 		<string>东莞市</string>
 		<string>丹东市</string>
 		<string>定西市</string>
@@ -73,11 +77,13 @@
 		<string>大连市</string>
 	</array>
 	<array>
+		<string>E</string>
 		<string>恩施土家族苗族自治州</string>
 		<string>鄂尔多斯市</string>
 		<string>鄂州市</string>
 	</array>
 	<array>
+		<string>F</string>
 		<string>福州市</string>
 		<string>阜新市</string>
 		<string>抚顺市</string>
@@ -87,6 +93,7 @@
 		<string>佛山市</string>
 	</array>
 	<array>
+		<string>G</string>
 		<string>赣州市</string>
 		<string>广州市</string>
 		<string>贵阳市</string>
@@ -100,6 +107,7 @@
 		<string>甘南藏族自治州</string>
 	</array>
 	<array>
+		<string>H</string>
 		<string>怀化市</string>
 		<string>合肥市</string>
 		<string>黄冈市</string>
@@ -137,6 +145,7 @@
 		<string>黄石市</string>
 	</array>
 	<array>
+		<string>J</string>
 		<string>锦州市</string>
 		<string>济南市</string>
 		<string>济宁市</string>
@@ -160,6 +169,7 @@
 		<string>荆州市</string>
 	</array>
 	<array>
+		<string>K</string>
 		<string>开封市</string>
 		<string>克拉玛依市</string>
 		<string>昆明市</string>
@@ -167,6 +177,7 @@
 		<string>喀什地区</string>
 	</array>
 	<array>
+		<string>L</string>
 		<string>拉萨市</string>
 		<string>连云港市</string>
 		<string>丽江市</string>
@@ -197,6 +208,7 @@
 		<string>来宾市</string>
 	</array>
 	<array>
+		<string>M</string>
 		<string>马鞍山市</string>
 		<string>茂名市</string>
 		<string>绵阳市</string>
@@ -205,6 +217,7 @@
 		<string>牡丹江市</string>
 	</array>
 	<array>
+		<string>N</string>
 		<string>南平市</string>
 		<string>宁德市</string>
 		<string>南昌市</string>
@@ -219,6 +232,7 @@
 		<string>南充市</string>
 	</array>
 	<array>
+		<string>P</string>
 		<string>萍乡市</string>
 		<string>平凉市</string>
 		<string>攀枝花市</string>
@@ -228,6 +242,7 @@
 		<string>平顶山市</string>
 	</array>
 	<array>
+		<string>Q</string>
 		<string>钦州市</string>
 		<string>衢州市</string>
 		<string>清远市</string>
@@ -243,10 +258,12 @@
 		<string>泉州市</string>
 	</array>
 	<array>
+		<string>R</string>
 		<string>日照市</string>
 		<string>日喀则地区</string>
 	</array>
 	<array>
+		<string>S</string>
 		<string>韶关市</string>
 		<string>石河子市</string>
 		<string>山南地区</string>
@@ -281,6 +298,7 @@
 		<string>厦门市</string>
 	</array>
 	<array>
+		<string>T</string>
 		<string>太原市</string>
 		<string>图木舒克市</string>
 		<string>通辽市</string>
@@ -300,6 +318,7 @@
 		<string>台湾省</string>
 	</array>
 	<array>
+		<string>W</string>
 		<string>温州市</string>
 		<string>武汉市</string>
 		<string>武威市</string>
@@ -317,6 +336,7 @@
 		<string>文山壮族苗族自治州</string>
 	</array>
 	<array>
+		<string>X</string>
 		<string>湘潭市</string>
 		<string>锡林郭勒盟</string>
 		<string>徐州市</string>
@@ -339,6 +359,7 @@
 		<string>西双版纳傣族自治州</string>
 	</array>
 	<array>
+		<string>Y</string>
 		<string>宜昌市</string>
 		<string>伊春市</string>
 		<string>雅安市</string>
@@ -366,6 +387,7 @@
 		<string>伊犁哈萨克自治州</string>
 	</array>
 	<array>
+		<string>Z</string>
 		<string>张家界市</string>
 		<string>长治市</string>
 		<string>湛江市</string>

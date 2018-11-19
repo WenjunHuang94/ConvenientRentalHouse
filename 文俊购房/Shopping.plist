@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Shopping.plist
-   文俊购房
-
-   Created by 俊帅 on 17/4/26.
-   Copyright (c) 2017年 wj. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>name</key>
+		<string>伞</string>
+		<key>score</key>
+		<string>1000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>水杯</string>
+		<key>score</key>
+		<string>2000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>充电宝</string>
+		<key>score</key>
+		<string>3000</string>
+	</dict>
+</array>
 </plist>

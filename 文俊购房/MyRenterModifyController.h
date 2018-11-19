@@ -8,6 +8,17 @@
 
 #import "NavgiationViewController.h"
 
+@class  MyRenterModifyController;
+@protocol  MyRenterModifyControllerDelegate<NSObject>
+
+@optional
+-(void)UpdateModify:(MyRenterModifyController *)vcr;//编辑提交后更新信息
+
+@end
+
 @interface MyRenterModifyController : NavgiationViewController
+
+@property (nonatomic,strong)AVObject *object;
+@property (nonatomic,weak)id<MyRenterModifyControllerDelegate>delegate;
 
 @end

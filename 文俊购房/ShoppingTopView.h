@@ -10,4 +10,11 @@
 
 @interface ShoppingTopView : UIView
 
+@property (nonatomic,strong)UILabel *scoreLabel;//积分标签
+@property (nonatomic,strong)UILabel *score;//积分
+
+@property (nonatomic,strong)UIButton *registerBtn;//签到按钮
+
+@property (nonatomic,strong)void(^registerBlock)();
+
 @end

@@ -6,8 +6,12 @@
 //  Copyright © 2017年 wj. All rights reserved.
 //
 
+#import "Sington.h"
+
 #import <UIKit/UIKit.h>
 
 @interface HomeImgCell : UITableViewCell
+
+@property (nonatomic,strong)void(^imgBlock)(UIImage *img);
 
 @end

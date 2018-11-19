@@ -6,9 +6,9 @@
 //  Copyright © 2017年 wj. All rights reserved.
 //
 
-#import "NewClientCell.h"
+#import "NewHomeCell.h"
 
-@implementation NewClientCell
+@implementation NewHomeCell
 
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -28,6 +28,7 @@
     UICollectionViewFlowLayout *flowlayout = [UICollectionViewFlowLayout alloc];
     [flowlayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     
+    //房源滚动视图
     self.collectView = [[UICollectionView alloc] initWithFrame:(CGRect){0,0,k_w,_height} collectionViewLayout:flowlayout];
     [self addSubview:_collectView];
     
@@ -36,26 +37,29 @@
     
     _collectView.backgroundColor = [UIColor whiteColor];
     
-    //注册Cell，必须要有,而且类型和标识符必须都一致
-    [_collectView registerClass:[CollectionCell class] forCellWithReuseIdentifier:@"CollectionCell"];
+    //注册每一个Cell，必须要有,而且类型和标识符必须都一致
+    [_collectView registerClass:[NewHomeCollectionCell class] forCellWithReuseIdentifier:@"NewHomeCollectionCell"];
     
     [self getData];
     
 }
 
-//更新数据
+//获取最新房源数据
 -(void)getData{
     
     AVQuery *query = [AVQuery queryWithClassName:@"Home"];
-    [query orderByDescending:@"createdAt"];//按时间降序
-    [query includeKey:@"mainImg"];
+    [query orderByDescending:@"updatedAt"];//按时间降序
+    [query whereKey:@"homeVerify" equalTo:@(YES)];
     
-    query.limit = 6;//限定6个最新房客
+    [query includeKey:@"mainImg"];//包含图片
+    [query includeKey:@"imgArr"];
+    
+    query.limit = 10;//限定10个最新房源
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         
         if (!error) {//成功
             self.dataArr = objects;
-            [self.collectView reloadData];
+            [self.collectView reloadData];//更新图片
         }
         
     }];
@@ -68,7 +72,7 @@
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.dataArr.count;
+    return self.dataArr.count;//返回的个数，最多自行限制是十
 }
 
 //定义展示的Section的个数
@@ -80,21 +84,12 @@
 //每个UICollectionView展示的内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * CellIdentifier = @"CollectionCell";
+    static NSString * CellIdentifier = @"NewHomeCollectionCell";
     
-    CollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    NewHomeCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
     AVObject *object = self.dataArr[indexPath.row];
-    //通告图片
-    AVFile *file = [object objectForKey:@"mainImg"];
-    [file getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
-        
-        if (!error) {
-            UIImage *img = [UIImage imageWithData:data];//NSData转化为图片
-            [cell setMyImage:img];
-        }
-
-    }];
+    [cell setObject:object];
     
     return cell;
 }
@@ -110,7 +105,7 @@
 //定义每个UICollectionView 的 margin
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    return UIEdgeInsetsMake(5, 5, 5, 5);//设置每个UICollectionView边距
 }
 
 #pragma mark --UICollectionViewDelegate
@@ -118,13 +113,8 @@
 //UICollectionView被选中时调用的方法
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //CollectionCell * cell = (CollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    
-    //临时改变个颜色，看好，只是临时改变的。如果要永久改变，可以先改数据源，然后在cellForItemAtIndexPath中控制。（和UITableView差不多吧！O(∩_∩)O~）
-//    cell.backgroundColor = [UIColor greenColor];
-//    NSLog(@"item======%d",indexPath.item);
-//    NSLog(@"row=======%d",indexPath.row);
-//    NSLog(@"section===%d",indexPath.section);
+    self.collectViewBlock(self.dataArr[indexPath.row]);
+
 }
 
 //返回这个UICollectionView是否可以被选择

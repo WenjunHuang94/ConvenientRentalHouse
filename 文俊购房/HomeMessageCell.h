@@ -10,4 +10,15 @@
 
 @interface HomeMessageCell : UITableViewCell
 
+@property (nonatomic,strong)UIButton *imgBtn;//头像
+@property (nonatomic,strong)UILabel *name;//用户名
+
+@property (nonatomic,strong)UILabel *phone;//手机号
+@property (nonatomic,strong)UILabel *date;//日期
+@property (nonatomic,strong)UILabel *content;//留言内容
+
+@property (nonatomic,assign)CGFloat cellHeight;
+
+-(void)setDic:(NSDictionary *)dic;
+
 @end

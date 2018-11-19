@@ -13,6 +13,7 @@
 - (void)originalImage:(void (^)(UIImage *))returnImage{
     ALAssetsLibrary *lib = [[ALAssetsLibrary alloc] init];
     [lib assetForURL:self.imageURL resultBlock:^(ALAsset *asset) {
+        
         ALAssetRepresentation *rep = asset.defaultRepresentation;
         CGImageRef imageRef = rep.fullResolutionImage;
         UIImage *image = [UIImage imageWithCGImage:imageRef scale:rep.scale orientation:(UIImageOrientation)rep.orientation];

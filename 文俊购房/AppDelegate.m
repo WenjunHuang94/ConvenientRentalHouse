@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "MyTabBarViewController.h"
+#import "MyInforViewController.h"
+
+#import "MessageController.h"//消息
+
+#define APP_ID @"ith9shGEItu6gNMDgFrjtXCj-gzGzoHsz"
+#define APP_KEY @"Y8ktMctMdvQgz1uI6GtkvvoY"
 
 @interface AppDelegate ()
 
@@ -16,13 +24,43 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //设置云数据库ID和KEY
+    [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY];
+ 
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    NSArray *ctr = @[@"ReleaseController",@"ShoppingController",@"RootViewController",@"MessageController",@"MyViewController"];
+    NSMutableArray *marr = [NSMutableArray array];
+    for (NSString *ctrname in ctr) {
+        UIViewController *vc = [[NSClassFromString(ctrname)alloc]init];
+        
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+        [marr addObject:nav];
+    }
+    
+    NSArray *images = @[@"tabBar_publish_icon",@"mine_points",@"tabBar_homepage_icon",@"tabBar_message_icon",@"tabBar_me_icon"];
+    NSMutableArray *imgarr = [NSMutableArray array];
+    for (NSString *imgname in images) {
+        UIImage *img = [UIImage imageNamed:imgname];
+        [imgarr addObject:img];
+    }
+    
+    MyTabBarViewController *mytabbar = [[MyTabBarViewController alloc]init];
+    [mytabbar tabbarWithTitle:@[@"发布",@"商城",@"首页",@"通知",@"我"] AndNOImage:imgarr AndTitleColor:[UIColor whiteColor] AndTitleFont:[UIFont systemFontOfSize:15]];
+    
+    mytabbar.viewControllers = marr;
+    //选择第几页语句要放在添加了控制器数组之后才有效
+    [mytabbar setSelectedIndex:4];
+    
+    _window.rootViewController = mytabbar;
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+   
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

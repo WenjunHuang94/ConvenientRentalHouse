@@ -6,6 +6,8 @@
 //  Copyright © 2017年 wj. All rights reserved.
 //
 
+
+//忘记密码视图
 #import "NavgiationViewController.h"
 
 @interface ForgetPasswordController : NavgiationViewController

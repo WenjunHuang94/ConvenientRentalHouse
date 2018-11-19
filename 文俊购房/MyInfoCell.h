@@ -10,4 +10,7 @@
 
 @interface MyInfoCell : UITableViewCell
 
+@property (nonatomic,strong)UILabel *contentLabel;
+@property (nonatomic,strong)UILabel *content;
+
 @end

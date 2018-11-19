@@ -10,4 +10,6 @@
 
 @interface HomeMessageController : NavgiationViewController
 
+@property (nonatomic,strong)AVObject *object;
+
 @end

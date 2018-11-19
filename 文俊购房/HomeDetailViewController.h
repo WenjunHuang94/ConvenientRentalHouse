@@ -10,4 +10,6 @@
 
 @interface HomeDetailViewController : NavgiationViewController
 
+@property (nonatomic,strong)AVObject *object;
+
 @end

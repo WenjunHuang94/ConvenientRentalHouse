@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "cityModel.h"
+#import "Sington.h"
 
 @interface HotTableViewCell : UITableViewCell
+
+@property (nonatomic,strong)void(^myblock)(UIButton *);
 
 @end

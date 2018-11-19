@@ -10,4 +10,6 @@
 
 @interface renterInfoCityCell : UITableViewCell
 
+@property (nonatomic,strong)UILabel *currentCityLabel;//选中的城市
+
 @end

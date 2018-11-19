@@ -10,4 +10,8 @@
 
 @interface MessageModel : NSObject
 
+@property (nonatomic,strong)UIImage *img;
+@property (nonatomic,copy)NSString *title;
+@property (nonatomic,copy)NSString *subTitle;
+
 @end

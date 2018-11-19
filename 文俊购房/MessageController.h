@@ -7,6 +7,7 @@
 //
 
 #import "NavgiationViewController.h"
+#import "MessageModel.h"
 
 @interface MessageController : NavgiationViewController
 

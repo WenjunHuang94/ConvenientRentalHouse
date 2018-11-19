@@ -10,4 +10,6 @@
 
 @interface renterInfoDetailController : NavgiationViewController
 
+@property (nonatomic,strong)AVObject *object;
+
 @end

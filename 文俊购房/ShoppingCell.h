@@ -10,4 +10,11 @@
 
 @interface ShoppingCell : UITableViewCell
 
+@property (nonatomic,strong)UIImageView *imgView;//图片
+@property (nonatomic,strong)UILabel *shopingName;//商品名
+@property (nonatomic,strong)UILabel *shopingScore;//兑换积分
+
+@property (nonatomic,strong)UIButton *buyBtn;//况换按钮
+@property (nonatomic,strong)void(^buy)();//兑换代理
+
 @end

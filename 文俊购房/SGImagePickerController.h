@@ -15,4 +15,5 @@
 
 //返回用户选择的照片的缩略图
 @property (nonatomic,copy) void(^didFinishSelectThumbnails)(NSArray *thumbnails);
+
 @end

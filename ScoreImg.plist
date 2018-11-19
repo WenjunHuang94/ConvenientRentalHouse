@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   ScoreImg.plist
-   文俊购房
-
-   Created by mac on 16/5/14.
-   Copyright (c) 2016年 wj. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<string>img_05</string>
+	<string>img_00</string>
+	<string>img_01</string>
+	<string>img_02</string>
+	<string>img_03</string>
+	<string>img_04</string>
+	<string>img_05</string>
+	<string>img_00</string>
+</array>
 </plist>

@@ -10,4 +10,9 @@
 
 @interface NewClientCollectionCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImageView *imageView;//图片
+@property (nonatomic,strong)UILabel *cityLabel;//城市名
+
+- (void)setObject:(AVObject *)object;
+
 @end

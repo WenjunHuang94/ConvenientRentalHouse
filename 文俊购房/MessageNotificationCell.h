@@ -10,4 +10,11 @@
 
 @interface MessageNotificationCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *timeLabel;//时间
+@property (nonatomic, strong) UIImageView *imgView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *contentLabel;
+
+-(void)setObject:(AVObject *)object;
+
 @end

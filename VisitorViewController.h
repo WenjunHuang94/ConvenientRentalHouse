@@ -6,8 +6,8 @@
 //  Copyright © 2016年 wj. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "NavgiationViewController.h"
 
-@interface VisitorViewController : UIViewController
+@interface VisitorViewController : NavgiationViewController
 
 @end

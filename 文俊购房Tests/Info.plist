@@ -20,5 +20,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Bundle Display Name</key>
+	<string>便捷租房帮</string>
 </dict>
 </plist>

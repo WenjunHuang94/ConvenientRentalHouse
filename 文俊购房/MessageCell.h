@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MessageModel.h"
 
 @interface MessageCell : UITableViewCell
+
+@property (nonatomic,strong)MessageModel *model;//model
+
+@property (nonatomic, strong) UIImageView *imgView;//图片
+@property (nonatomic, strong) UILabel *titleLabel;//头标题
+@property (nonatomic, strong) UILabel *subtitleLabel;//描述
 
 @end

@@ -10,4 +10,7 @@
 
 @interface MyTabbarItem : UIButton
 
+//设置tabbar选项的大小
+-(id)initWithFrame:(CGRect)frame AndTitels:(NSString *)title AndImage:(UIImage *)image AndTitleColor:(UIColor *)color AndTitleFont:(UIFont *)font;
+
 @end
